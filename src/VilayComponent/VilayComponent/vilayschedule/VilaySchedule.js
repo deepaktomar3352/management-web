@@ -101,8 +101,8 @@ function VilaySchedule() {
   ];
 
   const fillEvents = () => {
-    return events.map((item) => (
-      <div class="grid-item" id={item.id}>
+    return events.map((item,index) => (
+      <div key={index} class="grid-item" id={item.id}>
         {/* <Zoom> */}
         <Paper elevation={3} className="paper">
           <Grid container spacing={3}>

@@ -46,27 +46,27 @@ export default function CountDown() {
     <div>
       <div id="countdown_container">
         <div>
-          <p class="p_container">
-            <span class="days">{timerDays}</span>
-            <span class="seconds">Days</span>
+          <p className="p_container">
+            <span className="days">{timerDays}</span>
+            <span className="seconds">Days</span>
           </p>
         </div>
         <div>
-          <p class="p_container">
-            <span class="days">{timerHours}</span>
-            <span class="seconds">Hours</span>{" "}
+          <p className="p_container">
+            <span className="days">{timerHours}</span>
+            <span className="seconds">Hours</span>{" "}
           </p>
         </div>
         <div>
-          <p class="p_container">
-            <span class="days">{timerMinutes}</span>
-            <span class="seconds">Minutes</span>{" "}
+          <p className="p_container">
+            <span className="days">{timerMinutes}</span>
+            <span className="seconds">Minutes</span>{" "}
           </p>
         </div>
         <div>
-          <p class="p_container">
-            <span class="days">{timerSeconds}</span>
-            <span class="seconds">Seconds</span>{" "}
+          <p className="p_container">
+            <span className="days">{timerSeconds}</span>
+            <span className="seconds">Seconds</span>{" "}
           </p>
         </div>
       </div>

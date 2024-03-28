@@ -1,17 +1,15 @@
-import { Button } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 import { ContainedButton } from '@iktakahiro/gradient-mui-button';
-import { useLocation } from "react-router-dom";
-import { ClassNames } from "@emotion/react";
+
 
 export default function RazorPay() {
 
-  const location=useLocation()
+  // const location=useLocation()
 
-  console.log(location.state.fee)
+  // console.log(location.state.fee)
   const [status, setStatus] = useState('')
-  const fam = location.state.fee
+  const fam = 500
   const options = {
     // key: 'rzp_test_1DP5mmOlF5G5ag',
     key: 'rzp_test_qPOfPOdzrtddEv',

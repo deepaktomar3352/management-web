@@ -66,7 +66,7 @@ export default function Vilay() {
   const fetchCarouselImg = async () => {
     var result = await getData("gallery/fetchTechnoparvCarouselImg");
     // alert(result)
-    console.log(result.data);
+    // console.log(result.data);
     setImage(result.data);
   };
 
