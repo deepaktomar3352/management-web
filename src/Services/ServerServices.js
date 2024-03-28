@@ -1,5 +1,5 @@
 import axios from "axios"
-const serverURL = "http://localhost:5000"
+const serverURL = "https://management-backend-qchf.onrender.com"
 
 const getData = async (URL) => {
     try {
