@@ -52,7 +52,7 @@ function App() {
           path={"/RegistrationPage"}
         ></Route>
         <Route element={<SigninPage />} path={"/SigninPage"}></Route>
-        <Route element={<Homepage />} path={"/homepage"}></Route>
+        <Route element={<Homepage />} path={"/"}></Route>
         <Route
           element={<WorkshopMainEvent />}
           path={"/WorkshopMainEvent/*"}
