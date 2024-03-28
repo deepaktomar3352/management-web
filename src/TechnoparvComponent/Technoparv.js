@@ -23,7 +23,7 @@ import TechnoparvDay04 from "./TechnoparvDay04";
 import EventCard from "./EventCard";
 import { useTheme } from "@mui/material/styles";
 import { useLocation } from "react-router-dom";
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import MaterialTable from "@material-table/core";
 import { Tooltip } from "@mui/material";
@@ -204,7 +204,7 @@ export default function Technoparv() {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
-            ></IconButton>
+              size="large"></IconButton>
             <Typography variant="h6" color="inherit" component="div">
               Technoparv
             </Typography>

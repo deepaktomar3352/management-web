@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import AppBar from '@mui/material/AppBar';
 import { Grid } from '@mui/material';
-import { Button } from '@material-ui/core';
+import { Button } from '@mui/material';
 import { ContainedButton } from '@iktakahiro/gradient-mui-button';
 import { useStyles } from '../../Component/administrator/HomePageCss';
 import { Routes, Route } from 'react-router-dom';

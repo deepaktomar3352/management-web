@@ -312,7 +312,7 @@ export default function RegistrationPage() {
                                                         <div className="d-flex flex-row align-items-center mt-3">
                                                             <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                                             <div className="form-outline flex-fill mb-0">
-                                                                <FormControl>
+                                                                <FormControl variant="standard">
 
                                                                     <RadioGroup
                                                                         row
@@ -366,13 +366,14 @@ export default function RegistrationPage() {
                                                                 <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
                                                                     <InputLabel id="demo-simple-select-standard-label">Semester</InputLabel>
                                                                     <Select
+                                                                        variant="standard"
                                                                         labelId="demo-simple-select-standard-label"
                                                                         id="demo-simple-select-standard"
                                                                         value={Ssemester}
                                                                         onChange={handleSemesterChange}
                                                                         label="Year"
-                                                                        onFocus={() => handleError("Ssemester", null)} error={!error.Ssemester ? false : true}
-                                                                    >
+                                                                        onFocus={() => handleError("Ssemester", null)}
+                                                                        error={!error.Ssemester ? false : true}>
                                                                         {/* <MenuItem value="">
                                                                         <em>None</em>
                                                                     </MenuItem> */}
@@ -449,10 +450,7 @@ export default function RegistrationPage() {
                     </div>
                 </> : <></>}
             </div>
-
-
-
-        )
+        );
     }
 
     function showDialog() {

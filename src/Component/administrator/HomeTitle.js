@@ -92,15 +92,15 @@ export default function HomeTitle() {
                         <div className={classes.headingStyle}>Title Interface</div>
                     </Grid>
                     <Grid item xs={12}>
-                        <div>  < FormControl fullWidth required sx={{ m: 1, minWidth: 120 }}>
+                        <div>  <FormControl variant="standard" fullWidth required sx={{ m: 1, minWidth: 120 }}>
                             <InputLabel id="demo-simple-select-required-label">Page</InputLabel>
                             <Select
+                                variant="standard"
                                 labelId="demo-simple-select-required-label"
                                 id="demo-simple-select-required"
                                 value={Page}
                                 label="Page*"
-                                onChange={handleChange}
-                            >
+                                onChange={handleChange}>
                                 {/* <MenuItem value="">
                                     <em>None</em>
                                 </MenuItem> */}
@@ -126,6 +126,6 @@ export default function HomeTitle() {
                 </Grid>
             </div>
         </div>
-    )
+    );
 
 }

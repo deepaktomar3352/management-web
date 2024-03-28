@@ -127,9 +127,7 @@ export default function Gallery() {
               ) : (
                 <>
                   {" "}
-                  <a href="homepage">
-                    <HomeIcon style={{ color: "#fff" }} />
-                  </a>
+                 
                 </>
               )}
             </Grid>

@@ -257,39 +257,40 @@ const SubEvent = () => {
               <Grid key={index} container spacing={2}>
                 <Grid item xs={6}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Event Name"
                     name="eventName"
                     value={event.eventName}
                     onChange={(e) => handleChange(e, index)}
                     error={!!errors[index]?.eventName}
-                    helperText={errors[index]?.eventName}
-                  />
+                    helperText={errors[index]?.eventName} />
                 </Grid>
                 <Grid item xs={6}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Description"
                     name="description"
                     value={event.description}
                     onChange={(e) => handleChange(e, index)}
                     error={!!errors[index]?.description}
-                    helperText={errors[index]?.description}
-                  />
+                    helperText={errors[index]?.description} />
                 </Grid>
                 <Grid item xs={6}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Venue"
                     name="venue"
                     value={event.venue}
                     onChange={(e) => handleChange(e, index)}
                     error={!!errors[index]?.venue}
-                    helperText={errors[index]?.venue}
-                  />
+                    helperText={errors[index]?.venue} />
                 </Grid>
                 <Grid item xs={6}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Time"
                     name="time"
@@ -303,11 +304,11 @@ const SubEvent = () => {
                     }}
                     inputProps={{
                       step: 300, // 5 min
-                    }}
-                  />
+                    }} />
                 </Grid>
                 <Grid item xs={6}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Date"
                     name="date"
@@ -318,34 +319,34 @@ const SubEvent = () => {
                     helperText={errors[index]?.date}
                     InputLabelProps={{
                       shrink: true,
-                    }}
-                  />
+                    }} />
                 </Grid>
 
                 <Grid item xs={6}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Coordinator Name"
                     name="coordinatorName"
                     value={event.coordinatorName}
                     onChange={(e) => handleChange(e, index)}
                     error={!!errors[index]?.coordinatorName}
-                    helperText={errors[index]?.coordinatorName}
-                  />
+                    helperText={errors[index]?.coordinatorName} />
                 </Grid>
                 <Grid item xs={6}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Coordinator Number"
                     name="coordinatorNumber"
                     value={event.coordinatorNumber}
                     onChange={(e) => handleChange(e, index)}
                     error={!!errors[index]?.coordinatorNumber}
-                    helperText={errors[index]?.coordinatorNumber}
-                  />
+                    helperText={errors[index]?.coordinatorNumber} />
                 </Grid>
                 <Grid item xs={6}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Event Fee"
                     name="eventFee"
@@ -353,11 +354,11 @@ const SubEvent = () => {
                     value={event.eventFee}
                     onChange={(e) => handleChange(e, index)}
                     error={!!errors[index]?.eventFee}
-                    helperText={errors[index]?.eventFee}
-                  />
+                    helperText={errors[index]?.eventFee} />
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
+                    variant="standard"
                     fullWidth
                     label="Rules"
                     name="rules"
@@ -366,8 +367,7 @@ const SubEvent = () => {
                     value={event.rules}
                     onChange={(e) => handleChange(e, index)}
                     error={!!errors[index]?.rules}
-                    helperText={errors[index]?.rules}
-                  />
+                    helperText={errors[index]?.rules} />
                 </Grid>
                 <Grid item xs={6}>
                   <input

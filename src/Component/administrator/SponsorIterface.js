@@ -192,7 +192,12 @@ export default function Sponsor() {
                         <TextField error={!error.Comment ? false : true} helperText={error.Comment} onFocus={() => handleError("Comment", null)} fullWidth value={Comment} onChange={(event) => setComment(event.target.value)} variant="outlined" label=" Comment" type="email" />
                     </Grid>
                     <Grid item xs={6} >
-                        <IconButton className={classes.flex} color="primary" aria-label="upload picture" component="label">
+                        <IconButton
+                            className={classes.flex}
+                            color="primary"
+                            aria-label="upload picture"
+                            component="label"
+                            size="large">
                             <input hidden accept="image/*" type="file" onChange={handleChange} />
                             <PhotoCamera />
                             <Avatar alt="Remy Sharp" variant="rounded" src={Logo.fileName} />

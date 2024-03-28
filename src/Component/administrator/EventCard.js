@@ -1,9 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Typography, Grid } from '@material-ui/core';
-import EventIcon from '@material-ui/icons/Event';
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import makeStyles from '@mui/styles/makeStyles';
+import { Paper, Typography, Grid } from '@mui/material';
+import EventIcon from '@mui/icons-material/Event';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Zoom from 'react-reveal/Zoom';
 import { Button } from '@mui/material';
 import SellIcon from '@mui/icons-material/Sell';

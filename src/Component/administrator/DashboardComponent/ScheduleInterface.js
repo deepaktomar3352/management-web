@@ -237,16 +237,15 @@ export default function ScheduleInterface() {
                         </div>
                     </Grid>
                     <Grid xs={6}>
-                        <div>  < FormControl fullWidth required sx={{ m: 1, minWidth: 120 }}>
+                        <div>  <FormControl variant="standard" fullWidth required sx={{ m: 1, minWidth: 120 }}>
                             <InputLabel id="demo-simple-select-required-label">Page</InputLabel>
                             <Select
+                                variant="standard"
                                 labelId="demo-simple-select-required-label"
                                 id="demo-simple-select-required"
                                 value={Page}
                                 label="Page*"
-                                onChange={handlePageChange}
-
-                            >
+                                onChange={handlePageChange}>
                                 {/* <MenuItem value="">
                                     <em>None</em>
                                 </MenuItem> */}
@@ -257,15 +256,15 @@ export default function ScheduleInterface() {
                         </FormControl></div>
                     </Grid>
                     <Grid xs={6}>
-                        <div>  < FormControl fullWidth required sx={{ m: 1, minWidth: 110 }}>
+                        <div>  <FormControl variant="standard" fullWidth required sx={{ m: 1, minWidth: 110 }}>
                             <InputLabel id="demo-simple-select-required-label">Day</InputLabel>
                             <Select
+                                variant="standard"
                                 labelId="demo-simple-select-required-label"
                                 id="demo-simple-select-required"
                                 value={Day}
                                 label="Day*"
-                                onChange={handleDayChange}
-                            >
+                                onChange={handleDayChange}>
                                 {/* <MenuItem value="0">
                                     <em>None</em>
                                 </MenuItem> */}

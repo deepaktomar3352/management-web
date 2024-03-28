@@ -8,7 +8,7 @@ import Avatar from "@mui/material/Avatar";
 import { Button, formLabelClasses } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useStyles } from "./HomePageCss";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { getData, serverURL } from "../../Services/ServerServices";
 import { useEffect, useState } from "react";
@@ -31,11 +31,11 @@ import { GridLoader } from "react-spinners";
 
 // import { messaging } from '../../PushNotification/FireBase2';
 // import { getToken } from "firebase/messaging";
-import { green } from "@material-ui/core/colors";
+import { green } from "@mui/material/colors";
 
 export default function Homepage() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
   // const   smd= useMediaQuery(theme.breakpoints.up('375px'));
 
   var classes = useStyles();
@@ -220,7 +220,7 @@ export default function Homepage() {
                     color="inherit"
                     aria-label="menu"
                     sx={{ mr: 2 }}
-                  ></IconButton>
+                    size="large"></IconButton>
                   {!matches ? (
                     <>
                       <Typography

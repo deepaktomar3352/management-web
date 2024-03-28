@@ -1,10 +1,10 @@
 import React from 'react'
-import { TextField, Button, Grid } from '@material-ui/core'
+import { TextField, Button, Grid } from '@mui/material'
 import '../../../StyleSheets/AddEventCardCss.css'
 import { useState } from 'react'
 import Swal from 'sweetalert2'
 import { postData } from '../../../Services/ServerServices'
-import { Event } from '@material-ui/icons'
+import { Event } from '@mui/icons-material'
 function AddEventCard() {
     const[EventName,setEventName]=useState('')
     const[EventDescription,setEventDescription]=useState('')

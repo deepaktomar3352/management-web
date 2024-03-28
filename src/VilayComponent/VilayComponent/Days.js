@@ -109,7 +109,8 @@ export default function Day() {
                                 </div>
 
                                 <div style={{ display: "flex", flexDirection: "row" }}>
-                                    <Link  to='#cnc'
+                                    <Link
+                                        to='#cnc'
                                         style={{
                                             textDecoration: "none",
                                             width: 115,
@@ -119,17 +120,20 @@ export default function Day() {
                                             justifyItems: "center",
                                             justifyContent: "center",
                                             cursor: "pointer"
-                                        }}> <ContainedButton color="primary"><span className={classes.schedulelistbutton} onClick={() => Navigate("/WorkShopCard")}>Details</span></ContainedButton></Link>
-                                    <Link style={{
-                                        textDecoration: "none",
-                                        width: 115,
-                                        height: 40, margin: 19,
-                                        alignItems: "center",
-                                        display: "flex",
-                                        justifyItems: "center",
-                                        justifyContent: "center",
+                                        }}
+                                        underline="hover"> <ContainedButton color="primary"><span className={classes.schedulelistbutton} onClick={() => Navigate("/WorkShopCard")}>Details</span></ContainedButton></Link>
+                                    <Link
+                                        style={{
+                                            textDecoration: "none",
+                                            width: 115,
+                                            height: 40, margin: 19,
+                                            alignItems: "center",
+                                            display: "flex",
+                                            justifyItems: "center",
+                                            justifyContent: "center",
 
-                                    }}> <ContainedButton color="primary" ><span className={classes.schedulelistbutton}>join</span></ContainedButton></Link>
+                                        }}
+                                        underline="hover"> <ContainedButton color="primary" ><span className={classes.schedulelistbutton}>join</span></ContainedButton></Link>
                                 </div>
                             </div>
 
@@ -220,26 +224,31 @@ export default function Day() {
                                 </div>
 
                                 <div style={{ display: "flex", flexDirection: "row" }}>
-                                    <Link to='#cnc' style={{
-                                        textDecoration: "none",
-                                        width: 115,
-                                        height: 40, margin: 19,
-                                        alignItems: "center",
-                                        display: "flex",
-                                        justifyItems: "center",
-                                        justifyContent: "center",
-                                        cursor: "pointer"
-                                    }}> <ContainedButton color="primary"><span className={classes.schedulelistbutton} onClick={() => Navigate("/WorkShopCard")}>Details</span></ContainedButton></Link>
-                                    <Link style={{
-                                        textDecoration: "none",
-                                        width: 115,
-                                        height: 40, margin: 19,
-                                        alignItems: "center",
-                                        display: "flex",
-                                        justifyItems: "center",
-                                        justifyContent: "center",
-                                        cursor: "pointer"
-                                    }}> <ContainedButton color="primary" className={classes.schedulelistbuttonstyle} ><span className={classes.schedulelistbutton}>join</span></ContainedButton></Link>
+                                    <Link
+                                        to='#cnc'
+                                        style={{
+                                            textDecoration: "none",
+                                            width: 115,
+                                            height: 40, margin: 19,
+                                            alignItems: "center",
+                                            display: "flex",
+                                            justifyItems: "center",
+                                            justifyContent: "center",
+                                            cursor: "pointer"
+                                        }}
+                                        underline="hover"> <ContainedButton color="primary"><span className={classes.schedulelistbutton} onClick={() => Navigate("/WorkShopCard")}>Details</span></ContainedButton></Link>
+                                    <Link
+                                        style={{
+                                            textDecoration: "none",
+                                            width: 115,
+                                            height: 40, margin: 19,
+                                            alignItems: "center",
+                                            display: "flex",
+                                            justifyItems: "center",
+                                            justifyContent: "center",
+                                            cursor: "pointer"
+                                        }}
+                                        underline="hover"> <ContainedButton color="primary" className={classes.schedulelistbuttonstyle} ><span className={classes.schedulelistbutton}>join</span></ContainedButton></Link>
                                 </div>
                             </div>
                         </ListItem>
@@ -349,26 +358,31 @@ export default function Day() {
                                 </div>
 
                                 <div style={{ display: "flex", flexDirection: "row", alignSelf: "end" }}>
-                                    <Link to='#cnc' style={{
-                                        textDecoration: "none",
-                                        width: 115,
-                                        height: 40, margin: 19,
-                                        alignItems: "center",
-                                        display: "flex",
-                                        justifyItems: "center",
-                                        justifyContent: "center",
-                                        cursor: "pointer"
-                                    }}> <ContainedButton color="primary"><span className={classes.schedulelistbutton} onClick={() => Navigate("/WorkShopCard")}>Details</span></ContainedButton></Link>
-                                    <Link style={{
-                                        textDecoration: "none",
-                                        width: 115,
-                                        height: 40, margin: 19,
-                                        alignItems: "center",
-                                        display: "flex",
-                                        justifyItems: "center",
-                                        justifyContent: "center",
-                                        cursor: "pointer"
-                                    }}> <ContainedButton color="primary" className={classes.schedulelistbuttonstyle} ><span className={classes.schedulelistbutton}>join</span></ContainedButton></Link>
+                                    <Link
+                                        to='#cnc'
+                                        style={{
+                                            textDecoration: "none",
+                                            width: 115,
+                                            height: 40, margin: 19,
+                                            alignItems: "center",
+                                            display: "flex",
+                                            justifyItems: "center",
+                                            justifyContent: "center",
+                                            cursor: "pointer"
+                                        }}
+                                        underline="hover"> <ContainedButton color="primary"><span className={classes.schedulelistbutton} onClick={() => Navigate("/WorkShopCard")}>Details</span></ContainedButton></Link>
+                                    <Link
+                                        style={{
+                                            textDecoration: "none",
+                                            width: 115,
+                                            height: 40, margin: 19,
+                                            alignItems: "center",
+                                            display: "flex",
+                                            justifyItems: "center",
+                                            justifyContent: "center",
+                                            cursor: "pointer"
+                                        }}
+                                        underline="hover"> <ContainedButton color="primary" className={classes.schedulelistbuttonstyle} ><span className={classes.schedulelistbutton}>join</span></ContainedButton></Link>
                                 </div>
                             </div>
                         </ListItem>
@@ -377,7 +391,5 @@ export default function Day() {
                 </Grid>
             </Grid>
         </div >
-
-
-    )
+    );
 }

@@ -11,7 +11,7 @@ export default function HomeEvent_Cards() {
 
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.down('md'));
-  const md = useMediaQuery(theme.breakpoints.up("md"));
+const md = useMediaQuery(theme.breakpoints.up("md"));
   const lg = useMediaQuery(theme.breakpoints.up("lg"));
   const xl = useMediaQuery(theme.breakpoints.up("xl"));
   const detail = [

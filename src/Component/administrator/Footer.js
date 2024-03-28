@@ -40,12 +40,12 @@ const Footer = () => {
           color={"#000"}
           target="_new"
         >
-          <IconButton color="inherit">
+          <IconButton color="inherit" size="large">
             <FontAwesomeIcon icon={faFacebook} />
           </IconButton>
         </Link>
 
-        <IconButton color="inherit">
+        <IconButton color="inherit" size="large">
           <FontAwesomeIcon icon={faTwitter} />
         </IconButton>
 
@@ -55,7 +55,7 @@ const Footer = () => {
           color={"#000"}
           target="_new"
         >
-          <IconButton color="inherit">
+          <IconButton color="inherit" size="large">
             <FontAwesomeIcon icon={faInstagram} />
           </IconButton>
         </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
           color={"#000"}
           target="_new"
         >
-          <IconButton color="inherit">
+          <IconButton color="inherit" size="large">
             <FontAwesomeIcon icon={faLinkedin} />
           </IconButton>
         </Link>

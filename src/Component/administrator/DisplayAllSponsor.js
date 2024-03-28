@@ -254,7 +254,7 @@ export default function DisplayAllSponsor() {
                                     color="primary"
                                     aria-label="upload picture"
                                     component="label"
-                                >
+                                    size="large">
                                     <input
                                         hidden
                                         accept="image/*"

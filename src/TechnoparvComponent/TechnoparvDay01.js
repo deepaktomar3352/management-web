@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import MaterialTable from "@material-table/core"
 import { Tooltip } from "@mui/material"
-import { Button } from '@material-ui/core';
+import { Button } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 import { getData, serverURL } from '../Services/ServerServices';
 

@@ -19,7 +19,7 @@ import { useEffect,useState } from "react";
 
 export default function DjNight() {
     const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.down('sm'));
+const matches = useMediaQuery(theme.breakpoints.down('sm'));
     var classes = TechnoparvCss()
 
 
@@ -59,7 +59,12 @@ export default function DjNight() {
                         <Box sx={{ flexGrow: 1, overflow: 'hidden' }} id="technoparv">
                             <AppBar position="fixed" sx={{ background: "#ff5e57", height: 50 }}>
                                 <Toolbar variant="dense">
-                                    <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+                                    <IconButton
+                                        edge="start"
+                                        color="inherit"
+                                        aria-label="menu"
+                                        sx={{ mr: 2 }}
+                                        size="large">
 
                                     </IconButton>
                                     <Typography variant="h6" color="inherit" component="div">
@@ -237,6 +242,5 @@ export default function DjNight() {
                    
            </> }
                     </div>
-                   
-            )
+    );
 }

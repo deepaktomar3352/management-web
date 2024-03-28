@@ -87,15 +87,15 @@ export default function InsertSliderImage() {
             <Grid container spacing={2} style={{ backgroundColor: '#fff', padding: '20px', borderRadius: '10px', boxShadow: '0px 0px 10px rgba(0,0,0,0.2)', width: "50%" }}>
                 <Grid item xs={12}>
                     <Box >
-                        <FormControl fullWidth>
+                        <FormControl variant="standard" fullWidth>
                             <InputLabel id="event-label">Event</InputLabel>
                             <Select
+                                variant="standard"
                                 labelId="event-label"
                                 id="event-select"
                                 value={event}
                                 label="Event"
-                                onChange={handleEventChange}
-                            >
+                                onChange={handleEventChange}>
                                 {events.map((event) => (
                                     <MenuItem key={event} value={event}>
                                         {event}

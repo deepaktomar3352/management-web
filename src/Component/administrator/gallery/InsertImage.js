@@ -159,15 +159,15 @@ export default function InsertImage() {
       >
         <Grid item xs={6}>
           <Box>
-            <FormControl fullWidth>
+            <FormControl variant="standard" fullWidth>
               <InputLabel id="event-label">Event</InputLabel>
               <Select
+                variant="standard"
                 labelId="event-label"
                 id="event-select"
                 value={event}
                 label="Event"
-                onChange={handleEventChange}
-              >
+                onChange={handleEventChange}>
                 {events.map((event) => (
                   <MenuItem key={event} value={event}>
                     {event}
@@ -179,16 +179,16 @@ export default function InsertImage() {
         </Grid>
         <Grid item xs={6}>
           <Box sx={{ minWidth: 120 }}>
-            <FormControl fullWidth>
+            <FormControl variant="standard" fullWidth>
               <InputLabel id="year-label">Year</InputLabel>
               <Select
+                variant="standard"
                 labelId="year-label"
                 id="year-select"
                 value={year}
                 label="Year"
                 onChange={handleYearChange}
-                disabled={!event}
-              >
+                disabled={!event}>
                 {yearOptions.map((year) => (
                   <MenuItem key={year} value={year}>
                     {year}

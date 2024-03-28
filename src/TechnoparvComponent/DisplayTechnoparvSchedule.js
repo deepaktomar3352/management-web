@@ -295,16 +295,15 @@ export default function DisplayTechnoparvSchedule() {
                     <DialogContent >
                         <Grid container spacing={2} style={{ marginTop: 5 }}>
                             <Grid item xs={6}>
-                                <div>  < FormControl fullWidth sx={{ m: 1, minWidth: 120 }}>
+                                <div>  <FormControl variant="standard" fullWidth sx={{ m: 1, minWidth: 120 }}>
                                     <InputLabel id="demo-simple-select-required-label">Page</InputLabel>
                                     <Select
+                                        variant="standard"
                                         labelId="demo-simple-select-required-label"
                                         id="demo-simple-select-required"
                                         value={Page}
                                         label="Page*"
-                                        onChange={handlePageChange}
-
-                                    >
+                                        onChange={handlePageChange}>
                                         {/* <MenuItem value="">
                                     <em>None</em>
                                 </MenuItem> */}
@@ -315,15 +314,15 @@ export default function DisplayTechnoparvSchedule() {
                                 </FormControl></div>
                             </Grid>
                             <Grid item xs={6}>
-                                <div>  < FormControl fullWidth sx={{ m: 1, minWidth: 110 }}>
+                                <div>  <FormControl variant="standard" fullWidth sx={{ m: 1, minWidth: 110 }}>
                                     <InputLabel id="demo-simple-select-required-label">Day</InputLabel>
                                     <Select
+                                        variant="standard"
                                         labelId="demo-simple-select-required-label"
                                         id="demo-simple-select-required"
                                         value={Day}
                                         label="Day*"
-                                        onChange={handleDayChange}
-                                    >
+                                        onChange={handleDayChange}>
                                         {/* <MenuItem value="0">
                                     <em>None</em>
                                 </MenuItem> */}
