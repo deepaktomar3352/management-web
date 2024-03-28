@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
 }
 
@@ -246,7 +247,13 @@ body {
 
 @media (min-width:320px) and (max-width:359px) {
 
-
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: scroll;
+  }
 
   /* ************************************USED FOR TITLE*************************************** */
   .title {

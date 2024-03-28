@@ -35,7 +35,7 @@ import { green } from "@mui/material/colors";
 
 export default function Homepage() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('md'));
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
   // const   smd= useMediaQuery(theme.breakpoints.up('375px'));
 
   var classes = useStyles();
@@ -126,13 +126,13 @@ export default function Homepage() {
         // console.log(result.data);
         setSponsor(result.data);
       } else {
-        console.error('No data received from fetchSponsorImg');
+        console.error("No data received from fetchSponsorImg");
       }
     } catch (error) {
-      console.error('fetchSponsorImg encountered an error:', error);
+      console.error("fetchSponsorImg encountered an error:", error);
     }
   };
-  
+
   const fetchTitle = async () => {
     try {
       var result = await getData("index/fetchtitle");
@@ -140,13 +140,13 @@ export default function Homepage() {
         // console.log(result.data);
         setTitle(result.data);
       } else {
-        console.error('No data received from fetchTitle');
+        console.error("No data received from fetchTitle");
       }
     } catch (error) {
-      console.error('fetchTitle encountered an error:', error);
+      console.error("fetchTitle encountered an error:", error);
     }
   };
-  
+
   useEffect(() => {
     fetchSponsorImg();
     fetchTitle();
@@ -160,9 +160,9 @@ export default function Homepage() {
   }, []);
 
   const fillImg = () => {
-    return sponsor.map((item,index) => {
+    return sponsor.map((item, index) => {
       return (
-        <div key={index}  >
+        <div key={index}>
           {" "}
           <Box>
             <img
@@ -220,7 +220,8 @@ export default function Homepage() {
                     color="inherit"
                     aria-label="menu"
                     sx={{ mr: 2 }}
-                    size="large"></IconButton>
+                    size="large"
+                  ></IconButton>
                   {!matches ? (
                     <>
                       <Typography
@@ -234,21 +235,24 @@ export default function Homepage() {
                     </>
                   ) : (
                     <>
-                      <MenuIcon onClick={handleDrawer} />
                       <div
                         style={{
                           display: "flex",
-                          justifyContent: "center",
+                          justifyContent: "space-between",
+                          alignItems:'center',
                           width: "100%",
                         }}
                       >
-                        <Typography
-                          variant="h6"
-                          color="inherit"
-                          component="div"
-                        >
-                          Evento
-                        </Typography>
+                        <MenuIcon onClick={handleDrawer} />
+                        <div>
+                          <Typography
+                            variant="h6"
+                            color="inherit"
+                            component="div"
+                          >
+                            Evento
+                          </Typography>
+                        </div>
                       </div>
                     </>
                   )}
@@ -595,7 +599,13 @@ export default function Homepage() {
                 </div>
               </Zoom>
 
-              <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                 <Zoom>
                   {" "}
                   <div className="d-flex flex-row justify-content-around  flex-wrap mt-2  sponsorimg">
