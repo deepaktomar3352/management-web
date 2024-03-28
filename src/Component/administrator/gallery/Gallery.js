@@ -22,7 +22,7 @@ import HomeIcon from "@mui/icons-material/Home";
 
 export default function Gallery() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
 
   var classes = useStyles();
   const [slider, setSlider] = useState([]);
@@ -85,7 +85,7 @@ export default function Gallery() {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
-            ></IconButton>
+              size="large"></IconButton>
             <Typography variant="h6" color="inherit" component="div">
               Eventos
             </Typography>

@@ -18,7 +18,7 @@ import { postData } from "../../Services/ServerServices";
 
 export default function RegistrationPage() {
     const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.down('sm'));
+    const matches = useMediaQuery(theme.breakpoints.down('md'));
 
     const [Sname, setSname] = useState('');
     const [Fname, setFname] = useState('');

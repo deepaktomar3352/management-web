@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, Paper, Divider, Grid, TextareaAutosize } from '@mui/material';
-import { LinearProgress } from "@material-ui/core";
-import CloudUploadIcon from "@material-ui/icons/CloudUpload";
+import { LinearProgress } from "@mui/material";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import { postData } from '../Services/ServerServices';
 import Swal from 'sweetalert2';
 

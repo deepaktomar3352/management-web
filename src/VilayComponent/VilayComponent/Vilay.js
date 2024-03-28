@@ -23,7 +23,7 @@ import Footer from "../../Component/administrator/Footer";
 
 export default function Vilay() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
 
   var classes = TechnoparvCss();
   // const [btnStatus, setBtnStatus] = useState(false);
@@ -152,7 +152,7 @@ export default function Vilay() {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
-            ></IconButton>
+              size="large"></IconButton>
             <Typography variant="h6" color="inherit" component="div">
               Vilay
             </Typography>

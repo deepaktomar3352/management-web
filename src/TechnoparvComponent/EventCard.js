@@ -9,7 +9,7 @@ export default function EventCard() {
 
   var classes = TechnoparvCss();
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>

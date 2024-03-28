@@ -12,7 +12,7 @@ import videoBg3 from "../Videos/VideoBg3.mp4";
 import "../Videos/videoCss.css";
 export default function VilayMusicEvent() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
 
   var classes = TechnoparvCss();
 
@@ -43,7 +43,7 @@ export default function VilayMusicEvent() {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
-            ></IconButton>
+              size="large"></IconButton>
             <Typography variant="h6" color="inherit" component="div">
               Vilay
             </Typography>

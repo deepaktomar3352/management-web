@@ -361,7 +361,12 @@ export default function DisplayTechnoparvSchedule() {
                                 <TextField error={!error.Fee ? false : true} helperText={error.Fee} onFocus={() => handleError("Fee", null)} fullWidth value={Fee} onChange={(event) => setFee(event.target.value)} variant="outlined" label=" Fee" type="text" />
                             </Grid>
                             <Grid item xs={6} >
-                                <IconButton className={classes.flex} color="primary" aria-label="upload picture" component="label">
+                                <IconButton
+                                    className={classes.flex}
+                                    color="primary"
+                                    aria-label="upload picture"
+                                    component="label"
+                                    size="large">
                                     <input hidden accept="image/*" type="file" />
                                     <PhotoCamera />
                                     <Avatar alt="Remy Sharp" variant="rounded" src={Logo.fileName} />

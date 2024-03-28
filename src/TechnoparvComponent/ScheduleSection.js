@@ -15,7 +15,7 @@ export default function ScheduleSection() {
     var navigate = useNavigate()
     var classes = TechnoparvCss()
     const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.down('sm'));
+    const matches = useMediaQuery(theme.breakpoints.down('md'));
 
 
    

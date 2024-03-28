@@ -15,7 +15,7 @@ import "../Videos/videoCss.css";
 
 export default function VilayLiteraryEvent() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
 
   var classes = TechnoparvCss();
 
@@ -46,7 +46,7 @@ export default function VilayLiteraryEvent() {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
-            ></IconButton>
+              size="large"></IconButton>
             <Typography variant="h6" color="inherit" component="div">
               Vilay
             </Typography>

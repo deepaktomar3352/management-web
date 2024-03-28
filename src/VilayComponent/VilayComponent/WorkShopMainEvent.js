@@ -23,7 +23,12 @@ export default function WorkShopMainEvent() {
                 <Box sx={{ flexGrow: 1, }}>
                     <AppBar position="fixed" sx={{ background: "#ff5e57" }}>
                         <Toolbar variant="dense">
-                            <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+                            <IconButton
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                sx={{ mr: 2 }}
+                                size="large">
                                 <MenuIcon />
                             </IconButton>
                             <Typography variant="h6" color="inherit" component="div">
@@ -74,5 +79,5 @@ export default function WorkShopMainEvent() {
                </Routes>
             </div>
         </div>
-    )
+    );
 }

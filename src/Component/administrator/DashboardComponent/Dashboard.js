@@ -60,7 +60,7 @@ export default function Dashboard() {
                 color="inherit"
                 aria-label="menu"
                 sx={{ mr: 2 }}
-              ></IconButton>
+                size="large"></IconButton>
               <Typography variant="h6" color="inherit" component="div">
                 Evanto
               </Typography>
