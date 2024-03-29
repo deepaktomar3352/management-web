@@ -2,23 +2,19 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { getData, serverURL } from "../../../Services/ServerServices";
 import Carousel from "react-bootstrap/Carousel";
-import Button from "react-bootstrap/Button";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { AppBar, Paper, Grid } from "@mui/material";
+import { AppBar,  Grid } from "@mui/material";
 import Box from "@mui/material/Box";
-import Avatar from "@mui/material/Avatar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import "../../../StyleSheets/GalleryCss.css";
 import { useStyles } from "../HomePageCss";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import HomeIcon from "@mui/icons-material/Home";
+
 
 export default function Gallery() {
   const theme = useTheme();
@@ -26,8 +22,8 @@ export default function Gallery() {
 
   var classes = useStyles();
   const [slider, setSlider] = useState([]);
-  const [fill, setFill] = useState("");
-  const [mobileOpen, setMobileOpen] = useState(false);
+  // const [fill, setFill] = useState("");
+  // const [mobileOpen, setMobileOpen] = useState(false);
 
   const fetchImg = async () => {
     var result = await getData("gallery/gallery");
@@ -45,7 +41,7 @@ export default function Gallery() {
         <Carousel.Item interval={1500}>
           <img
             src={`${serverURL}/uploaded/${i.picture}`}
-            alt="Event Images"
+            alt=""
             style={{ width: "100%", height: !matches ? "92vh" : "55vh" }}
           />
         </Carousel.Item>
@@ -53,9 +49,9 @@ export default function Gallery() {
     });
   };
 
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+  // const handleDrawerToggle = () => {
+  //   setMobileOpen((prevState) => !prevState);
+  // };
 
   // var settings = {
   //   dots: false,
@@ -74,9 +70,7 @@ export default function Gallery() {
         <AppBar
           position="fixed"
           sx={{
-            background: "#bc4e9c",
-            background: "-webkit-linear-gradient(to right, #bc4e9c, #f80759",
-            background: "linear-gradient(to right, #bc4e9c, #f80759)",
+            background: "linear-gradient(to right, #bc4e9c, #f80759)"
           }}
         >
           <Toolbar variant="dense">
@@ -170,41 +164,41 @@ export default function Gallery() {
         <div className="boxs">
           <a href="/Gallery2018">
             {" "}
-            <img src="/images/3.jpg" />
+            <img alt="" src="/images/3.jpg" />
           </a>
           <span>2018</span>
         </div>
         <div className="boxs">
           <a href="/Gallery2019">
             {" "}
-            <img src="/images/5.jpg" />
+            <img alt="" src="/images/5.jpg" />
           </a>
           <span>2019</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getimg2k20">
             {" "}
-            <img src="/images/6.jpg" />
+            <img alt="" src="/images/6.jpg" />
           </a>
           <span>2020</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getimg2k21">
             {" "}
-            <img src="/images/7.jpg" />
+            <img alt="" src="/images/7.jpg" />
           </a>
           <span>2021</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getimg2k22">
             {" "}
-            <img src="/images/8.jpg" />
+            <img alt="" src="/images/8.jpg" />
           </a>
           <span>2022</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getimg2k23">
-            <img src="/images/2.jpg" />
+            <img alt="" src="/images/2.jpg" />
           </a>
           <span>2023</span>
         </div>
@@ -231,41 +225,41 @@ export default function Gallery() {
         <div className="boxs">
           <a href="/fetch/getvimg2k18">
             {" "}
-            <img src="/images/11.jpg" />
+            <img alt="" src="/images/11.jpg" />
           </a>
           <span>2018</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getvimg2k19">
             {" "}
-            <img src="/images/12.jpg" />
+            <img alt="" src="/images/12.jpg" />
           </a>
           <span>2019</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getvimg2k20">
             {" "}
-            <img src="/images/13.jpg" />
+            <img alt="" src="/images/13.jpg" />
           </a>
           <span>2020</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getvimg2k21">
             {" "}
-            <img src="/images/14.jpg" />
+            <img alt="" src="/images/14.jpg" />
           </a>
           <span>2021</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getvimg2k22">
             {" "}
-            <img src="/images/16.jpg" />
+            <img alt="" src="/images/16.jpg" />
           </a>
           <span>2022</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getvimg2k23">
-            <img src="/images/9.jpg" />
+            <img alt="" src="/images/9.jpg" />
           </a>
           <span>2023</span>
         </div>
@@ -287,41 +281,41 @@ export default function Gallery() {
         <div className="boxs">
           <a href="/fetch/getiimg2k18">
             {" "}
-            <img src="/images/19.jpg" />
+            <img alt="" src="/images/19.jpg" />
           </a>
           <span>2018</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getiimg2k19">
             {" "}
-            <img src="/images/20.jpg" />
+            <img alt="" src="/images/20.jpg" />
           </a>
           <span>2019</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getiimg2k20">
             {" "}
-            <img src="/images/21.jpg" />
+            <img alt="" src="/images/21.jpg" />
           </a>
           <span>2020</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getiimg2k21">
             {" "}
-            <img src="/images/25.jpg" />
+            <img alt="" src="/images/25.jpg" />
           </a>
           <span>2021</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getiimg2k22">
             {" "}
-            <img src="/images/30.jpg" />
+            <img alt="" src="/images/30.jpg" />
           </a>
           <span>2022</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getiimg2k23">
-            <img src="/images/17.jpg" />
+            <img alt="" src="/images/17.jpg" />
           </a>
           <span>2023</span>
         </div>
@@ -344,41 +338,41 @@ export default function Gallery() {
         <div className="boxs">
           <a href="/fetch/getaimg2k18">
             {" "}
-            <img src="/images/27.jpg" />
+            <img alt="" src="/images/27.jpg" />
           </a>
           <span>2018</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getaimg2k19">
             {" "}
-            <img src="/images/24.jpg" />
+            <img alt="" src="/images/24.jpg" />
           </a>
           <span>2019</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getaimg2k20">
             {" "}
-            <img src="/images/29.jpg" />
+            <img alt="" src="/images/29.jpg" />
           </a>
           <span>2020</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getaimg2k21">
             {" "}
-            <img src="/images/6.jpg" />
+            <img alt="" src="/images/6.jpg" />
           </a>
           <span>2021</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getaimg2k22">
             {" "}
-            <img src="/images/8.jpg" />
+            <img alt="" src="/images/8.jpg" />
           </a>
           <span>2022</span>
         </div>
         <div className="boxs">
           <a href="/fetch/getaimg2k23">
-            <img src="/images/4.jpg" />
+            <img alt="" src="/images/4.jpg" />
           </a>
           <span>2023</span>
         </div>

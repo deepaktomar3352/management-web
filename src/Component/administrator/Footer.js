@@ -33,7 +33,7 @@ const Footer = () => {
           Phone: 9285052400, 9285032400 | Email: info@ipsgwalior.org
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", gap: "10px" }}>
+      {/* <Box sx={{ display: "flex", gap: "10px" }}>
         <Link
           href="https://www.facebook.com/ipsgocgwalior"
           underline="none"
@@ -69,7 +69,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </IconButton>
         </Link>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

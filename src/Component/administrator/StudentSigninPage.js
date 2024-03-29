@@ -42,7 +42,7 @@ export default function StudentSigninPage() {
         if (result.data) {
 
             localStorage.setItem("USER", JSON.stringify(result.data))
-            navigate("/homepage")
+            navigate("/")
             if (result.status) {
                 Swal.fire({
                     icon: 'success',
